@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0409a06870.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="title">Navigation</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Web</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Introduction To....</p>
+                <h1><span>Web Development</span> <br>is the work involved in developing
+                    a website for the Internet or an intranet.</h1>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. </p>
+                        <br>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link">Tools
+                        </div>
+
+                        <br><br>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br></li>
+                                <li><span>CSS</span><br></li>
+                                <li><span>JavaScipt</span><br></li>
+                            </ul>
+                        </div>
+                 </div>
+
+            </div>
+        
+            
+        </div>
+        
+    </div>
+    <div class="copy-right">
+        <p>Copyright ©️ Trijo</p>
+    </div>
+        
+    </div>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html> 
